@@ -1,10 +1,11 @@
 {
-  "name": "create-react-app-with-typescript",
+  "name": "idus-test",
   "version": "5.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.10.9",
     "@mui/material": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",

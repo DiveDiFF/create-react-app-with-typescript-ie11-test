@@ -5,7 +5,7 @@ import CardList from './pages/CardList';
 import FormList from './pages/FormList';
 import Home from './pages/Home';
 
-function Router() {
+export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
@@ -16,5 +16,3 @@ function Router() {
     </BrowserRouter>
   );
 }
-
-export default Router;
