@@ -6,7 +6,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import Layout from './Layout';
 import Router from './router';
 import theme from './styles/theme';
 
@@ -17,8 +16,6 @@ root.render(
   <ThemeProvider theme={theme}>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
-    <Layout>
-      <Router />
-    </Layout>
+    <Router />
   </ThemeProvider>
 );

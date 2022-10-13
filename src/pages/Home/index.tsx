@@ -15,11 +15,11 @@ export default function Home() {
         <Link href="/card_list" underline="none">
           <MenuBox>1. 카드 리스트</MenuBox>
         </Link>
-        <Box>
-          <Link href="/form_list" underline="none">
-            <MenuBox>2. 폼 리스트</MenuBox>
-          </Link>
-        </Box>
+      </Box>
+      <Box>
+        <Link href="/form_list" underline="none">
+          <MenuBox>2. 폼 리스트</MenuBox>
+        </Link>
       </Box>
     </Box>
   );
