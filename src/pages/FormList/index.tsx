@@ -11,7 +11,7 @@ export default function FormList() {
       </Typography>
       <Stack spacing={2} sx={{ my: '16px' }}>
         <TextFieldForm />
-        <TextFieldForm maxLength={99} />
+        <TextFieldForm maxLength={99} defaultValue="가나다라마바사" />
         <TextFieldForm type="readonly" defaultValue="입력중인 텍스트 리드온니 폼" />
         <TextFieldForm type="disabled" defaultValue="제어 불가 폼" />
       </Stack>

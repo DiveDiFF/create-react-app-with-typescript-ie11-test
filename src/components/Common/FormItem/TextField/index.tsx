@@ -10,7 +10,7 @@ type TextFieldFormProps = {
 
 export default function TextFieldForm({
   type = 'active',
-  maxLength = 999,
+  maxLength = 300,
   defaultValue,
 }: TextFieldFormProps) {
   const formMethods = useForm<{ text: string }>({
@@ -22,9 +22,7 @@ export default function TextFieldForm({
     console.log('[SUBMIT] : ', formData);
   }, []);
 
-  const watchTextValue = formMethods.watch('text', '').length;
-
-  console.log(formMethods.formState.errors, formMethods.formState.isValid);
+  const watchTextValue = formMethods.watch('text', '');
 
   return (
     <FormProvider {...formMethods}>
@@ -55,12 +53,14 @@ export default function TextFieldForm({
                     formMethods.formState.errors.text?.type === 'maxLength' ? 'error' : 'grey.500'
                   }
                 >
-                  {watchTextValue}
+                  {maxLength - watchTextValue.length >= 0
+                    ? maxLength - watchTextValue.length
+                    : '글자수 초과'}
                 </Typography>
               </Box>
             )}
           />
-          {formMethods.formState.isDirty && (
+          {formMethods.formState.isDirty && watchTextValue !== defaultValue && (
             <Button
               type="submit"
               variant="outlined"
