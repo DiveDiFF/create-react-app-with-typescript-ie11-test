@@ -11,7 +11,7 @@ export default function Home() {
           IDUS front-end developer test
         </Typography>
       </Box>
-      <Box sx={{ marginTop: "40px" }}>
+      <Box sx={{ marginTop: '40px' }}>
         <Link href="/card_list" underline="none">
           <MenuBox>1. 카드 리스트</MenuBox>
         </Link>

@@ -10,9 +10,9 @@ export default function Header() {
       <Link
         href="/"
         underline="none"
-        sx={{ display: "flex", alignItems: "center", color: "grey.700" }}
+        sx={{ display: 'flex', alignItems: 'center', color: 'grey.700' }}
       >
-        <HomeIcon color="inherit" sx={{ marginRight: "8px" }} />
+        <HomeIcon color="inherit" sx={{ marginRight: '8px' }} />
         <Typography color="inherit" variant="subtitle1">
           HOME
         </Typography>
