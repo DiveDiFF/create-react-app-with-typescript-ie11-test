@@ -34,7 +34,7 @@ export default function HorizontalCard({ cardData }: HorizontalCardProps) {
             </EllipsisTypography>
           </Box>
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ display: { sm: 'flex', xs: 'block' }, alignItems: 'center' }}>
           <Rating value={rating} />
           <Typography color="grey.400" sx={{ marginLeft: '8px' }}>
             | {writer}
