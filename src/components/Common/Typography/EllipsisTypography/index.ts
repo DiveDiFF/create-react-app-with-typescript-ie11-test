@@ -8,10 +8,12 @@ export const EllipsisTypography = styled(Typography, {
   shouldForwardProp: (prop) => prop !== "lineNumber",
 })<EllipsisTypographyProps>(
   ({ lineNumber = 1, theme: { spacing, palette } }) => ({
-    overflowX: "hidden",
-    textOverflow: "ellipsis",
+    display: "-webkit-box",
+    width: "100%",
+    height: lineNumber * 24,
+    overflow: "hidden",
     WebkitLineClamp: lineNumber,
     WebkitBoxOrient: "vertical",
-    display: "-webkit-box",
+    textOverflow: "ellipsis",
   })
 );
