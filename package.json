@@ -1,7 +1,7 @@
 {
   "name": "idus-test",
   "version": "5.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
